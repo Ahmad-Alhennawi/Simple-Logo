@@ -1,0 +1,40 @@
+/* ممكن استخدمها ك شعار */
+
+
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    background-color: rgb(88, 111, 127);
+    border-bottom: 7px solid black;
+    position: relative;
+}
+
+div::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 130px;
+    height: 130px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    top: -70px;
+    left: 29px;
+    border: 7px solid white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+div::after {
+    content: 'Ahmad';
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 3px;
+    left: 5px;
+}
